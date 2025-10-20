@@ -33,7 +33,6 @@ body {
     height: auto;
     border-radius: 1vmax;
     margin-block-end: 1rem;
-    mask-size: 0;
 }
 
 .div-img-top img:hover {
@@ -41,7 +40,8 @@ body {
     mask-image: url(./images/icon-view.svg);
     mask-repeat: no-repeat;
     mask-position: center;
-    mask-size: 60%;
+    mask-size: 70%;
+    mask-mode: luminance;
 }
 
 .div-description {
@@ -51,6 +51,7 @@ body {
 }
 
 .div-description h1 {
+    font-size: clamp(20px, 5vw, 24px);
     transition: color 1s linear;
 }
 
