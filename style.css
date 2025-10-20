@@ -1,0 +1,125 @@
+:root {
+    --blue-500: hsl(215, 51%, 70%);
+    --cyan-400: hsl(178, 100%, 50%);
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --blue-line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--main-bg);
+}
+
+.article-component {
+    width: clamp(300px, 50%, 28rem);
+    min-height: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: var(--card-bg);
+    color: var(--white);
+    border-radius: 1vmax;
+}
+
+.div-img-top img {
+    width: 100%;
+    height: auto;
+    border-radius: 1vmax;
+    margin-block-end: 1rem;
+    mask-size: 0;
+}
+
+.div-img-top img:hover {
+    cursor: pointer;
+    mask-image: url(./images/icon-view.svg);
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: 60%;
+}
+
+.div-description {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.div-description h1 {
+    transition: color 1s linear;
+}
+
+.div-description h1:hover {
+    color: var(--cyan-400);
+    transition: color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.div-description p {
+    color: var(--blue-500);
+    line-height: 1.8;
+}
+
+.div-details {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-block: 1.5rem;
+}
+
+
+
+#p-one {
+    color: var(--cyan-400);
+}
+
+#p-one::before {
+    content: url(./images/icon-ethereum.svg);
+}
+
+#p-tow {
+    color: var(--blue-500);
+}
+
+#p-tow::before {
+    content: url(./images/icon-clock.svg);
+}
+
+hr {
+    border: 1px solid var(--blue-line);
+    margin-block-end: 1rem;
+}
+
+.div-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding-block: 0.7rem;
+}
+
+.div-footer img {
+    border-radius: 50%;
+    border: 2px solid var(--white);
+}
+
+.div-footer p {
+    color: var(--blue-500);
+}
+
+.span-footer {
+    margin-inline-start: 0.3rem;
+    color: var(--white);
+    transition: color 1s linear;
+}
+
+.span-footer:hover {
+    color: var(--cyan-400);
+    transition: color 0.3s ease-in-out;
+    cursor: pointer;
+}

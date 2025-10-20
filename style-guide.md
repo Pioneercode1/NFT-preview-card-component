@@ -18,10 +18,10 @@ The designs were created to the following widths:
 
 ### Neutral
 
-- Blue 950 (main BG): hsl(217, 54%, 11%)
-- Blue 900 (card BG): hsl(216, 50%, 16%)
-- Blue 800 (line): hsl(215, 32%, 27%)
-- White: hsl(0, 0%, 100%)
+--main-BG: hsl(217, 54%, 11%);
+--card-BG: hsl(216, 50%, 16%);
+--lue-line: hsl(215, 32%, 27%);
+--white: hsl(0, 0%, 100%);
 
 ## Typography
 
