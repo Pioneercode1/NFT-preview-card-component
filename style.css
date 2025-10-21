@@ -162,7 +162,7 @@ hr {
 
 @media (min-width: 88rem) {
     .article-component {
-        width: clamp(500px, 50%, 48rem);
+        width: clamp(500px, 50%, 40rem);
         min-height: 600px;
         margin: 2rem auto;
         padding: 2rem;
