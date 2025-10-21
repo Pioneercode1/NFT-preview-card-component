@@ -19,7 +19,7 @@ body {
 }
 
 .article-component {
-    width: clamp(300px, 50%, 28rem);
+    width: clamp(300px, 50%, 35rem);
     min-height: 500px;
     margin: 2rem auto;
     padding: 2rem;
@@ -28,20 +28,53 @@ body {
     border-radius: 1vmax;
 }
 
-.div-img-top img {
+/* .div-img-top img {
     width: 100%;
     height: auto;
     border-radius: 1vmax;
     margin-block-end: 1rem;
-}
+} */
 
-.div-img-top img:hover {
+/* .div-img-top img:hover {
     cursor: pointer;
     mask-image: url(./images/icon-view.svg);
     mask-repeat: no-repeat;
     mask-position: center;
     mask-size: 70%;
     mask-mode: luminance;
+} */
+
+.div-img-top {
+    width: 100%;
+    height: clamp(250px, 45vw, 450px);
+    margin-block-end: 1rem;
+    position: relative;
+    background-image: url(./images/image-equilibrium.jpg);
+    background-size: cover;
+    overflow: hidden;
+    object-fit: cover;
+
+}
+
+.div-img-top::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 255, 247, 0.4);
+    background-image: url(./images/icon-view.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+}
+
+.div-img-top:hover::after {
+    opacity: 1;
 }
 
 .div-description {
@@ -63,6 +96,7 @@ body {
 
 .div-description p {
     color: var(--blue-500);
+    font-size: clamp(1rem, 5vw, 18px);
     line-height: 1.8;
 }
 
@@ -111,6 +145,7 @@ hr {
 
 .div-footer p {
     color: var(--blue-500);
+    font-size: clamp(1rem, 5vw, 17px);
 }
 
 .span-footer {
@@ -123,4 +158,32 @@ hr {
     color: var(--cyan-400);
     transition: color 0.3s ease-in-out;
     cursor: pointer;
+}
+
+@media (min-width: 88rem) {
+    .article-component {
+        width: clamp(500px, 50%, 48rem);
+        min-height: 600px;
+        margin: 2rem auto;
+        padding: 2rem;
+        background-color: var(--card-bg);
+        color: var(--white);
+        border-radius: 1vmax;
+    }
+
+    .div-description p {
+        color: var(--blue-500);
+        font-size: clamp(1.1rem, 5vw, 19px);
+        line-height: 1.8;
+    }
+
+    .div-details p {
+        font-size: clamp(1.1rem, 5vw, 19px);
+    }
+
+    .div-footer p {
+        color: var(--blue-500);
+        font-size: clamp(1.1rem, 5vw, 19px);
+    }
+
 }
