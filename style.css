@@ -107,14 +107,13 @@ body {
     margin-block: 1.5rem;
 }
 
-
-
 #p-one {
     color: var(--cyan-400);
 }
 
 #p-one::before {
     content: url(./images/icon-ethereum.svg);
+    margin-right: 6px;
 }
 
 #p-tow {
@@ -123,6 +122,7 @@ body {
 
 #p-tow::before {
     content: url(./images/icon-clock.svg);
+    margin-right: 6px;
 }
 
 hr {
