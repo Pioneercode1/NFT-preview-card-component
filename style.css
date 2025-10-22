@@ -16,12 +16,14 @@
 body {
     min-height: 100vh;
     background-color: var(--main-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .article-component {
     width: clamp(300px, 50%, 35rem);
     min-height: 500px;
-    margin: 2rem auto;
     padding: 2rem;
     background-color: var(--card-bg);
     color: var(--white);
@@ -164,7 +166,6 @@ hr {
     .article-component {
         width: clamp(500px, 50%, 40rem);
         min-height: 600px;
-        margin: 2rem auto;
         padding: 2rem;
         background-color: var(--card-bg);
         color: var(--white);
