@@ -162,7 +162,7 @@ hr {
     .article-component {
         width: 28rem;
         height: fit-content;
-        padding: 2rem;
+        /* padding: 2rem; */
         background-color: var(--card-bg);
         color: var(--white);
         border-radius: 1vmax;
